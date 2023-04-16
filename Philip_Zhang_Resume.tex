@@ -1,0 +1,170 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% CV Philip Zhang 09/2020 %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\PassOptionsToPackage{dvipsnames}{xcolor}
+\documentclass[9pt,a4paper]{altacv}
+
+%Layout
+\geometry{left=0.6cm,right=10.3cm,marginparwidth=9.3cm,marginparsep=0.3cm,top=0.6cm,bottom=0.6cm,footskip=2\baselineskip}
+
+%Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue,
+}
+
+%Colors
+
+\definecolor{accent}{HTML}{000e17}
+\definecolor{heading}{HTML}{000e17}
+\definecolor{emphasis}{HTML}{696969}
+\definecolor{body}{HTML}{01415f}
+
+\colorlet{heading}{heading}
+\colorlet{accent}{accent}
+\colorlet{emphasis}{emphasis}
+\colorlet{body}{body}
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%
+
+\begin{document}
+\name{Philip Zhang}
+\tagline{}
+\personalinfo{
+    \location{SF Bay Area, California}
+    \phone{(510) 813-9049}
+    \email{\href{mailto:hi@philipzha.ng}{hi@philipzha.ng}}
+    \homepage{\href{https://philipzha.ng}{philipzha.ng}}
+    \github{\href{https://github.com/petabite}{github.com/petabite}}
+    \linkedin{\href{https://www.linkedin.com/in/philipzhangg/}{linkedin.com/in/philipzhangg}}
+}
+
+\begin{fullwidth}
+    \makecvheader
+\end{fullwidth}
+
+
+%%%%%%% Education
+\cvsection[page1sidebar]{Education}
+
+\cvevent{B.S., Computer Science \hspace*{\fill}GPA: 3.9}{University of California, San Diego}{Sept 2020 -- Jun 2024}{La Jolla, California}{}
+
+%%%%%% Experience
+\cvsection{Experience}
+
+\cvevent{Software Engineering Intern, Deploy (Infrastructure)}{\href{https://stripe.com}{Stripe}}{Jun 2022 -- Sept 2022}{Seattle, Washington}
+
+\begin{itemize}
+    \setlength{\itemindent}{0.5em}
+    \item[--] Implemented an automated data pipeline and wrote queries for a metrics dashboard to provide visibility into the usage of infrastructure locks
+    \item[--] Conducted user interviews with a manager and several engineers to understand the pain points of incident response
+    \item[--] Developed and shipped a tool that improves incident response by surfacing commonly created locks as an intern hackathon project which was selected by our CTO to be presented to Stripe's co-founders and 1.7k Stripes during a company-wide meeting
+    \item[--] Integrated infrastructure locks with a command line tool controlling automated host cycling, allowing the system to be disabled/enabled when needed
+    \item[--] Completed an incident remediation that improves an internal tool by preventing a human error from occurring in the future
+\end{itemize}
+\smallskip
+\textbf{Skills:} Go, gRPC, Protocol Buffers, Ruby, Sorbet, Mocha, Apache Airflow, Apache Parquet, Trino, Python, Typescript, React, Bazel
+
+\divider
+
+\cvevent{Software Engineering Intern}{\href{https://www.siriusxmcvs.com}{SiriusXM Connected Vehicle Services}}{Jun 2021 -- Aug 2021}{Remote}
+
+\begin{itemize}
+    \setlength{\itemindent}{0.5em}
+    \item[--] Developed a support Slack bot using NLP to assist 160+ engineers with resolving API issues, reducing load for support engineers
+    \item[--] Implemented a user friendly UI that displays key information from SiriusXM APIs to aid engineers in their debugging process, eliminating the need to make manual requests to APIs
+    \item[--] Consulted support and security engineers to best cater the integration to their needs and ensure company security and data privacy requirements were met
+\end{itemize}
+\smallskip
+\textbf{Skills:} AWS/Serverless Framework (Lambda, DynamoDB, Amplify), Slack API (Bolt), React, Python, Jira, BitBucket, Jenkins
+
+\divider
+
+% \cvevent{Mobile Developer}{\href{https://dasion.ai}{Dasion}}{Jan 2021 -- Present}{}
+
+% \begin{itemize}
+%     \setlength{\itemindent}{0.5em}
+%     \item[--] Developing two mobile applications connecting real estate and medicine to machine learning insights
+% \end{itemize}
+% \smallskip
+% \textbf{Skills:} Expo, React Native, Firebase, Google Cloud (Maps API), Flask
+
+% \divider
+
+\cvevent{Software Engineer}{Drizzle Co.}{Jun 2020 -- Sept 2020}{Remote}
+
+\begin{itemize}
+    \setlength{\itemindent}{0.5em}
+    \item[--] Developed and shipped six full stack projects, working on API design, database design, user authentication, and CI/CD integration
+\end{itemize}
+\smallskip
+\textbf{Skills:} Python, Flask, Vue.js, Vuetify, React, SQLAlchemy, GraphQL, Swagger, Twitter API, Heroku, Docker, pytest, Codecov, Buildkite, Git
+
+\medskip
+
+\textbf{Notable Projects}\\
+\begin{itemize}
+    \setlength{\itemindent}{0.5em}
+    \item[--] \href{https://feedzz.herokuapp.com/}{Feeds} - a web app and API for makers to manage their IoT data
+    \item[--] \href{https://salary-database.herokuapp.com/}{Salary Database} - API for browsing public H1B salary data
+    \item[--] \href{https://github.com/drizzleco/twitter-blast}{Twitter Blast} - a tool to connect with Twitter followers via DM
+        % \item[-–] create-flask-app - a Flask app boilerplate template code generator
+        % \item[-–] Exchange - an auction system simulation app
+\end{itemize}
+
+\divider
+
+\cvevent{Software Engineer}{\href{https://www.pilotcity.com}{PilotCity}}{Feb 2021 -- Apr 2021}{Remote}
+
+\begin{itemize}
+    \setlength{\itemindent}{0.5em}
+    \item[--] Developed frontend and backend logic for a web application enabling hundreds of high school students to build projects for various employers to win internships
+    \item[--] Debugged production builds to ensure stability for users
+\end{itemize}
+\smallskip
+\textbf{Skills:} Vue.js, Vuetify, MongoDB Atlas/Realm, AWS, Twilio, Git
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Certificates %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \cvsection{Certificates}
+
+% %%%%%%%%%%%%%
+% %Certificate 1
+% %%%%%%%%%%%%%
+
+% \cvevent{MCSD: App Builder — Certified 2019}{Microsoft}{Jan 2019 -- No Expiration Date}{}
+% \divider
+
+% %%%%%%%%%%%%%
+% %Certificate 2
+% %%%%%%%%%%%%%
+
+% \cvevent{MCSA: Web Applications — Certified 2019}{Microsoft}{Jan 2019 -- No Expiration Date}{}
+% \divider
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Interests %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \cvsection{Interests}
+
+% \wheelchart{1.5cm}{0.5cm}{%
+%   10/10em/accent!30/Electronics,
+%   25/9em/accent!60/Science,
+%   5/13em/accent!10/Movies,
+%   20/15em/accent!40/Sport,
+%   30/9em/accent/Technology,
+%   5/8em/accent!20/Literature
+% }
+
+
+%%New Page
+% \clearpage
+
+\end{document}
